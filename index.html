@@ -216,6 +216,12 @@ th, td {
 { url: "https://addresssearch.com/people-search-full-name.php?fn=" + FIRST_NAME_INPUT + "&ln=" + LAST_NAME_INPUT, section: "People Information" },
             ];
 
+            var urls = [
+                { name: "411", url: "https://411.com/person-search/" + FIRST_NAME_INPUT + "-" + LAST_NAME_INPUT + "/" + STATE_INPUT + "/" + CITY_INPUT.replace(/\s/g, "-"), section: "People Information" },
+                { name: "411info", url: "https://411.info/people?fn=" + FIRST_NAME_INPUT + "&ln=" + LAST_NAME_INPUT + "&cz=" + CITY_INPUT.replace(/\s/g, "-") + "%2C+" + STATE_INPUT, section: "People Information" },
+                { name: "addresses", url: "https://addresses.com/people/" + FIRST_NAME_INPUT + "+" + LAST_NAME_INPUT + "/" + STATE_INPUT, section: "People Information" },
+                { name: "addresssearch", url: "https://addresssearch.com/people-search-full-name.php?fn=" + FIRST_NAME_INPUT + "&ln=" + LAST_NAME_INPUT, section: "People Information" },
+            ];
             var urlsDiv = document.getElementById("urls");
             urlsDiv.style.display = "inline-flex";
             urlsDiv.innerHTML = "";
@@ -240,7 +246,7 @@ th, td {
                         window.open(url, '_blank');
                     }
                 })(urlObject.url);
-                button.textContent = new URL(urlObject.url).hostname.split('.')[0];
+                button.textContent = urlObject.name;
                 sections[sectionName].appendChild(button);
             }
         }
