@@ -1,0 +1,15 @@
+
+# 2024-02-10 20:48:50.523496
++create a python script that creates a backup version of "index.html" named "index_backup_{timestamp goes here}.html" and saves that backup copy to the "backups" folder in this directory.
+
+# 2024-02-10 20:49:55.388735
++/add index.html
+
+# 2024-02-10 20:50:50.110751
++create a new file, a python script that creates a backup of "index.html" names the backup "index_backup_{timestamp goes here}.html" and saves that backup copy to the "backups" folder in this directory.
+
+# 2024-02-10 20:53:38.608657
++/add index.html
+
+# 2024-02-10 20:53:42.362615
++refactor
