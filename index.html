@@ -389,6 +389,8 @@ th, td {
 <body>
   <button id="themeToggleBtn" class="theme-toggle-btn">Toggle Theme</button>
   <br>
+  <div style="background-color:#0e0e0e; margin-top: 20px; margin-bottom: 20px; font-weight: bold;">  <h1>NAME INFORMATION:</h1> </div>
+  <br>
   <div id="formContainer" class="" style="transition: all 0.5s ease-in-out;">
     <div class="card">
       <div class="">
@@ -408,6 +410,20 @@ th, td {
           <select id="DROP_DOWN_MENU" onchange="setFormValuesFromDropdown()">
           </select>
           <button type="button" class="btn" onclick="removeSelectedProfile()">REMOVE PROFILE</button>
+          <br>
+          <div style="background-color:#0e0e0e; margin-top: 20px; margin-bottom: 20px; font-weight: bold;">  <h1>ADDRESS INFORMATION:</h1> </div>
+          <br>
+          <input type="text" placeholder="STREET ADDRESS" id="STREET ADDRESS">
+          <input type="text" placeholder="CITY" id="CITY">
+          <input type="text" placeholder="ZIPCODE" id="ZIPCODE>
+           <select id="STATE_INPUT">
+            <option value="AL">AL</option>
+            <option value="AK">AK</option>
+            <option value="AZ">AZ</option>
+            <option value="AR">AR</option>
+            <option value="CA">CA</option>
+          </select>
+          
         </div>
       </div>
       </div>
